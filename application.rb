@@ -1,12 +1,7 @@
 require 'sinatra'
-require 'sinatra/config_file'
 require 'sinatra/reloader' if development?
 require 'erb'
 require 'net/http'
-
-configure do |c|
-  config_file 'config/settings.yml'
-end
 
 get '/' do
   erb :index
@@ -16,8 +11,8 @@ get '/z/:method' do
   # sleep(1) # for testing ajax loading indicator
   url = "http://api.zappos.com/"
   m = params[:method]
-  url = url + m + "?" + request.query_string + "&key=" + settings.zappos_api_key
-  # puts url
+  url = url + m + "?" + request.query_string + "&key=" + ENV['ZAPPOS_API_KEY']
+  puts url
 
   uri = URI.parse(url)
   http = Net::HTTP.new(uri.host, uri.port)
