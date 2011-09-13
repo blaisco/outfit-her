@@ -1,0 +1,113 @@
+<div id="welcome-window">
+  <p>Have you ever been shopping on <a target="_blank" href="http://www.zappos.com/">Zappos</a> 
+  and wondered, "Do these shoes go with this blouse? I wish I could show my friends."
+  Well now you can! Outfit Her is a fun 
+  way to create and share outfits with your friends.</p>
+  <p>Here's what you can do with Outfit Her:</p>
+  <ol>
+    <li><b>Use the dropdown menu to choose a category of clothing, shoes, jewelry, or
+    accessories</b>. You can limit your results by 
+    typing an item's name into the text box and clicking Search.</li>
+    <li><b>Click on an item to learn more about it</b>.</li>
+    <li><b>Drag items from the right side to the left side
+    and drop it into the place that lights up</b> to add items to your paper doll.</li>
+    <li>When you're done designing your killer outfit, <b>click on "Link" to get a link
+    that you can copy and paste into an email</b> and share with your friends.</li>
+  </ol>
+  <p>That's it! If you have any questions or comments, <a href="mailto:hi@antitantastic.com?subject=Outfit Her">send me an email</a>.</p>
+</div>
+
+<div id="link-window">
+  <div class="instructions">A link to this page:</div>
+  <input name="url" id="url" type="text"></input>
+</div>
+
+<div class="container_12 body">
+  <div class="grid_6">
+    <div id="tooltip-left" class="left"></div>
+    <div id="avatar-container" class="center">
+      <div id="avatar">
+        <img src="/images/outline_female.png"></img>
+        <div id="t1" class="medium slot" data-category="Dresses,Jackets and Coats,Tops"></div>
+        <div id="t2" class="medium slot" data-category="Dresses,Jackets and Coats,Tops"></div>
+        
+        <div id="b" class="medium slot" data-category="Bottoms"></div>
+        <div id="s" class="medium slot" data-category="Boots,Sandals,Shoes"></div>
+        
+        <div id="j1" class="small slot" data-category="Bracelets,Earrings,Necklaces,Rings"></div>
+        <div id="j2" class="small slot" data-category="Bracelets,Earrings,Necklaces,Rings"></div>
+        <div id="j3" class="small slot" data-category="Bracelets,Earrings,Necklaces,Rings"></div>
+        <div id="j4" class="small slot" data-category="Bracelets,Earrings,Necklaces,Rings"></div>
+        <div id="j5" class="small slot" data-category="Bracelets,Earrings,Necklaces,Rings"></div>
+        <div id="j6" class="small slot" data-category="Bracelets,Earrings,Necklaces,Rings"></div>
+        
+        <div id="a1" class="medium slot" data-category="Belts,Handbags,Scarves"></div>
+        <div id="a2" class="medium slot" data-category="Belts,Handbags,Scarves"></div>
+        
+        <a id="remove-all" href-"#">Remove all items</a>
+        <div id="cost">$0.00</div>
+      </div>
+    </div>
+  </div> 
+  <!-- end .grid_6 -->
+  
+  <div class="grid_6">
+    <div id="search-container">
+      <div id="tooltip-right" class="right"></div>
+      <ul class="toolbar">
+        <li class="left"><a href="#" id="welcome"><span class="ui-icon ui-icon-info"></span>Help</a></li>
+        <!--<li class="right"><a href="#" id="email"><span class="ui-icon ui-icon-mail-closed"></span>Share</a></li>-->
+        <li class="right"><a href="#" id="link"><span class="ui-icon ui-icon-link"></span>Link</a></li>
+      </ul>
+      <div class="clear">&nbsp;</div>
+      <div class="search-box">
+        <form id="search-form">
+          <div class="ui-widget"> 
+            <select id="search-category" name="search-category">
+              <option value="Belts">Accessories &gt; Belts</option>
+              <option value="Handbags">Accessories &gt; Handbags</option>
+              <option value="Scarves">Accessories &gt; Scarves</option>
+              <option value="Bottoms">Bottoms &gt; Bottoms</option>
+              <option value="Bracelets">Jewelry &gt; Bracelets</option>
+              <option value="Earrings">Jewelry &gt; Earrings</option>
+              <option value="Necklaces">Jewelry &gt; Necklaces</option>
+              <option value="Rings">Jewelry &gt; Rings</option>
+              <option value="Boots">Shoes &gt; Boots</option>
+              <option value="Sandals">Shoes &gt; Sandals</option>
+              <option value="Shoes" selected="selected">Shoes &gt; Shoes</option>
+              <option value="Dresses">Tops &gt; Dresses</option>
+              <option value="Jackets and Coats">Tops &gt; Jackets/Coats</option>
+              <option value="Tops">Tops &gt; Tops</option>
+            </select>
+            <input id="search-field" type="text"> 
+            <!--<div class="button" id="search-button">Search</div> -->
+            <span class="buttons"> 
+              <a href="#" class="button" id="search-button"> 
+              &nbsp;Search</a> 
+            </span> 
+            <div class="clear">&nbsp;</div>
+          </div>
+        </form>
+      </div>
+      <div id="num-results" class="left"></div>
+      <div class="ui-widget"> 
+        <select class="right" id="search-sort" name="search-sort">
+          <option value="newest" selected="selected">Newest</option>
+          <option value="mostPopular">Most Popular</option>
+          <option value="name">Name</option>
+          <option value="lowestPrice">Lowest Price</option>
+          <option value="highestPrice">Highest Price</option>
+        </select>
+      </div>
+      <div class="clear">&nbsp;</div>
+      
+      <ul id="listings"></ul>
+      <div class="clear">&nbsp;</div>
+      
+      <div id="pagination"></div><div id="loading"></div>
+      <div class="clear">&nbsp;</div>
+    </div> 
+  </div>
+  <!-- end .grid_6 --> 
+</div>
+<!-- end .container_12 -->
