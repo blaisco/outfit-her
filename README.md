@@ -4,9 +4,18 @@ Outfit Her is a way to create and share outfits. It’s a simple, single-page we
 search for items in the [Zappos](http://www.zappos.com/) catalog, add them to a virtual paper doll, 
 and then create a link to show your friends.
 
+
+
+Backstory
+---------
+
 I submitted this app to the [First Zappos Developer Contest](http://developer.zappos.com/blog/first-zappos-developer-contest) 
 and subsequently won it. I'm posting the code here in case anyone is interested in seeing it 
 (although since the code is 90% jQuery you could've seen most of it with View Source).
+
+For more information see [this blog post](http://antifantastic.com/post/5027747212/outfit-her-helping-women-create-outfits-with-zappos
+).
+
 
 How to run it
 -------------
